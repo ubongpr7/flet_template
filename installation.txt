@@ -1,0 +1,5 @@
+clone repo
+cd to global_happening_f on cmd or terminal 
+run "pip install requirements.txt"
+run "flet -r main.py"
+success!

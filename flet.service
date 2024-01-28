@@ -1,0 +1,13 @@
+[Unit]
+Description=Flet Server
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/gloal_happening_f
+Environment="PATH=/home/ubuntu/gloal_happening_f/env/bin"
+ExecStart=/bin/bash -c 'source /home/ubuntu/gloal_happening_f/env/bin/activate && python /home/ubuntu/gloal_happening_f/main.py'
+
+[Install]
+WantedBy=multi-user.target

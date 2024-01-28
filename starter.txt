@@ -1,0 +1,5 @@
+cd /etc/systemd/system
+sudo ln -s /home/ubuntu/flet-app/flet.service
+sudo systemctl start flet
+sudo systemctl enable flet
+sudo systemctl status flet
